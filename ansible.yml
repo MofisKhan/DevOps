@@ -1,0 +1,24 @@
+---
+- name: Install Git, docker and docker-compose, maven and JDK1.8
+  hosts: 192.168.27.8
+  
+  tasks:
+  - name: Install Git on slave
+    yum:
+      name: git
+      state: present
+  - name: start the httpd service
+    service:
+      name: git
+      state: started
+  
+  tasks:
+   - name: Install docker on slave
+     yum:
+       name: docker
+       state:present
+   -name: enable docker
+     yum:
+       name: enable docker
+       state: enable docker
+   
