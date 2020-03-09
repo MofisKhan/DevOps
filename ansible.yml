@@ -17,8 +17,3 @@
      yum:
        name: docker
        state:present
-   -name: enable docker
-     yum:
-       name: enable docker
-       state: enable docker
-   
