@@ -1,6 +1,6 @@
 ---
 - name: Install Git, docker and docker-compose, maven and JDK1.8
-  hosts: 192.168.27.8
+  hosts: localhost
   
   tasks:
   - name: Install Git on slave
