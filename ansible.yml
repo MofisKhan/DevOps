@@ -7,13 +7,3 @@
     yum:
       name: git
       state: present
-  - name: start the httpd service
-    service:
-      name: git
-      state: started
-  
-  tasks:
-   - name: Install docker on slave
-     yum:
-       name: docker
-       state:present
