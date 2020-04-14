@@ -1,5 +1,7 @@
 pipeline {
-  
+ 
+ agent any
+ 
    stages {
       stage('GIT poll') {
          steps {
@@ -14,7 +16,7 @@ pipeline {
           }
           
           steps{
-              sh 'mvn package'
+              sh 'mvn -B Student package'
           }
       }
         stage("build docker image"){
